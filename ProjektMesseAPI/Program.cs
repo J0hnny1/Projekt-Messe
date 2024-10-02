@@ -1,10 +1,15 @@
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.EntityFrameworkCore;
+using WebApplication1;
+using WebApplication1.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+// builder.Services.AddDbContext<Context>());
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -16,29 +21,34 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+ServerContext context = new ServerContext();
 
-app.MapGet("/weatherforecast", () =>
+app.MapGet("/customer", async Task<Kunde> (int id) =>
     {
-        var forecast = Enumerable.Range(1, 5).Select(index =>
-                new WeatherForecast
-                (
-                    DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                    Random.Shared.Next(-20, 55),
-                    summaries[Random.Shared.Next(summaries.Length)]
-                ))
-            .ToArray();
-        return forecast;
+        var kunde = await context.Kunden.Include(k => k.Firma).Include(k => k.Firma)
+            .FirstOrDefaultAsync(k => k.Id == id);
+
+        if (kunde == null)
+        {
+            new HttpRequestException();
+        }
+
+        return kunde;
     })
-    .WithName("GetWeatherForecast")
     .WithOpenApi();
 
-app.Run();
+app.MapPost("newCustomer",
+    (Kunde customer) =>
+    {
+        context.Kunden.Add(new Kunde
+        {
+            Name = customer.Name, Vorname = customer.Vorname, Geburtstag = customer.Geburtstag, PLZ = customer.PLZ,
+            Stadt = customer.Stadt, Straße = customer.Straße, Firmenberater = customer.Firmenberater,
+            Firma = customer.Firma, Bild = customer.Bild, Produktgruppen = customer.Produktgruppen
+        });
+        //context.Firma.Add(new Firma{FirmaID = 1, Name = "Firma1", Stadt = "Stadt1", PLZ = "12345", Straße = "Straße1"});
+        context.SaveChanges();
+    }).WithOpenApi();
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
+
+app.Run();
