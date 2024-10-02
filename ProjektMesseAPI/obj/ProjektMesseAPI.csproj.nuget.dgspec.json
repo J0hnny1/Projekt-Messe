@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\googo\\RiderProjects\\ProjektMesse\\ProjektMesseAPI\\ProjektMesseAPI.csproj": {}
+    "C:\\Users\\mattia.mercorillo\\source\\repos\\Projekt-Messe\\ProjektMesseAPI\\ProjektMesseAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\googo\\RiderProjects\\ProjektMesse\\ProjektMesseAPI\\ProjektMesseAPI.csproj": {
+    "C:\\Users\\mattia.mercorillo\\source\\repos\\Projekt-Messe\\ProjektMesseAPI\\ProjektMesseAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\googo\\RiderProjects\\ProjektMesse\\ProjektMesseAPI\\ProjektMesseAPI.csproj",
+        "projectUniqueName": "C:\\Users\\mattia.mercorillo\\source\\repos\\Projekt-Messe\\ProjektMesseAPI\\ProjektMesseAPI.csproj",
         "projectName": "ProjektMesseAPI",
-        "projectPath": "C:\\Users\\googo\\RiderProjects\\ProjektMesse\\ProjektMesseAPI\\ProjektMesseAPI.csproj",
-        "packagesPath": "C:\\Users\\googo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\googo\\RiderProjects\\ProjektMesse\\ProjektMesseAPI\\obj\\",
+        "projectPath": "C:\\Users\\mattia.mercorillo\\source\\repos\\Projekt-Messe\\ProjektMesseAPI\\ProjektMesseAPI.csproj",
+        "packagesPath": "C:\\Users\\mattia.mercorillo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mattia.mercorillo\\source\\repos\\Projekt-Messe\\ProjektMesseAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\googo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mattia.mercorillo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -72,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
