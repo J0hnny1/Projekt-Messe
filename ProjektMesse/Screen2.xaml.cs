@@ -34,5 +34,10 @@ namespace ProjektMesse
         {
             Utils.changeWindowTo<Screen3>(this);
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
