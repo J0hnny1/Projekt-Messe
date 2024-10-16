@@ -5,7 +5,7 @@ public class CustomerDTO
  
     public String Name { get; set; }
     public String Vorname { get; set; }
-    public DateOnly Geburtstag { get; set; }
+    public DateTime Geburtstag { get; set; }
     public string PLZ { get; set; }
     public string Stadt { get; set; }
     public string Straße { get; set; }
