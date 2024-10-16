@@ -12,5 +12,4 @@ public class CustomerDTO
     public bool Firmenberater { get; set; }
     public int FirmaID { get; set; }
     public byte[] Bild { get; set; }
-    public List<int> Produktgruppen { get; set; }
 }

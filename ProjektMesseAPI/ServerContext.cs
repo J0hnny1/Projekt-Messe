@@ -8,6 +8,7 @@ public class ServerContext: DbContext
     public DbSet<Kunde> Kunden { get; set; }
     public DbSet<Firma> Firma { get; set; }
     public DbSet<Produktgruppe> Produktgruppe { get; set; }
+    public DbSet<MatchKundeProduktgruppe> MatchKundeProduktgruppe { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
