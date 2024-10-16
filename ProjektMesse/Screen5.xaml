@@ -10,8 +10,8 @@
         <Label Content="Datenverwaltung" HorizontalAlignment="Left" Margin="48,28,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
         <Button Content="Home" HorizontalAlignment="Left" Margin="76,194,0,0" VerticalAlignment="Top" Width="117" Click="Button_Click"/>
         <Button Content="Lokale Kundendaten hochladen" HorizontalAlignment="Left" Margin="40,70,0,0" VerticalAlignment="Top" Width="189" Click="Button_Click_1"/>
-        <TextBox HorizontalAlignment="Left" Margin="40,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" Height="67" VerticalScrollBarVisibility="Visible"/>
-        <Label Content="&lt;Verbindungsstring&gt;" HorizontalAlignment="Left" Margin="40,96,0,0" VerticalAlignment="Top" Width="189" Foreground="#FF2D9517"/>
+        <TextBox x:Name="tbLogbox" HorizontalAlignment="Left" Margin="40,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" Height="67" VerticalScrollBarVisibility="Visible"/>
+        <Label x:Name="lbConnectionsstring" Content="&lt;Verbindungsstring&gt;" HorizontalAlignment="Left" Margin="40,96,0,0" VerticalAlignment="Top" Width="189" Foreground="#FF2D9517"/>
 
     </Grid>
 </Window>
