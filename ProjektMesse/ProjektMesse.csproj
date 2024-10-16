@@ -8,4 +8,12 @@
         <UseWPF>true</UseWPF>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Content Include="obj\Debug\net8.0-windows\Screen1.baml" />
+      <Content Include="obj\Debug\net8.0-windows\Screen2.baml" />
+      <Content Include="obj\Debug\net8.0-windows\Screen3.baml" />
+      <Content Include="obj\Debug\net8.0-windows\Screen4.baml" />
+      <Content Include="obj\Debug\net8.0-windows\Screen5.baml" />
+    </ItemGroup>
+
 </Project>
