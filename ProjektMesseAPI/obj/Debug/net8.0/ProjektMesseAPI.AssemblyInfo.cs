@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjektMesseAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5674ab8f6411778a72cdc21a9fe77623f71186d5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc7b078e65c95cae1956714af73da9398b7025fe")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjektMesseAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjektMesseAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

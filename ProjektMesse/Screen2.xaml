@@ -10,24 +10,24 @@
         <Button Content="Abbruch" HorizontalAlignment="Left" Margin="409,190,0,0" VerticalAlignment="Top" Click="Button_Click" Width="83"/>
         <Label Content="Neukunde Datenerfassung" HorizontalAlignment="Center" Margin="0,34,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
         <Button Content="Weiter" HorizontalAlignment="Left" Margin="409,215,0,0" VerticalAlignment="Top" Width="83" Click="Button_Click_1"/>
-        <Button Content="Bild hochladen" HorizontalAlignment="Left" Margin="91,210,0,0" VerticalAlignment="Top" Width="166"/>
-        <Label Content="Bild:" HorizontalAlignment="Left" Margin="91,182,0,0" VerticalAlignment="Top"/>
-        <Label Content="&lt;pfad&gt;" HorizontalAlignment="Left" Margin="123,182,0,0" VerticalAlignment="Top" Width="134"/>
+        <Button Content="Bild aufnehmen" HorizontalAlignment="Left" Margin="142,180,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click_2"/>
         <Label Content="Name" HorizontalAlignment="Left" Margin="40,76,0,0" VerticalAlignment="Top" Width="72" HorizontalContentAlignment="Right" RenderTransformOrigin="0.538,0.269"/>
-        <TextBox HorizontalAlignment="Left" Margin="117,80,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="145"/>
+        <TextBox x:Name="tbName" HorizontalAlignment="Left" Margin="117,80,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="145"/>
         <Label Content="Vorname" HorizontalAlignment="Left" Margin="40,99,0,0" VerticalAlignment="Top" Width="72" HorizontalContentAlignment="Right" RenderTransformOrigin="0.538,0.269"/>
-        <TextBox HorizontalAlignment="Left" Margin="117,103,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="145"/>
+        <TextBox x:Name="tbVorname" HorizontalAlignment="Left" Margin="117,103,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="145"/>
         <Label Content="Geburtstag" HorizontalAlignment="Left" Margin="40,122,0,0" VerticalAlignment="Top" Width="72" HorizontalContentAlignment="Right" RenderTransformOrigin="0.538,0.269"/>
         <Label Content="PLZ" HorizontalAlignment="Left" Margin="40,145,0,0" VerticalAlignment="Top" Width="72" HorizontalContentAlignment="Right" RenderTransformOrigin="0.538,0.269"/>
-        <TextBox HorizontalAlignment="Left" Margin="117,149,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="145"/>
+        <TextBox x:Name="tbPLZ" HorizontalAlignment="Left" Margin="117,149,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="145"/>
         <Label Content="Stadt" HorizontalAlignment="Left" Margin="270,76,0,0" VerticalAlignment="Top" Width="72" HorizontalContentAlignment="Right" RenderTransformOrigin="0.538,0.269"/>
-        <TextBox HorizontalAlignment="Left" Margin="347,80,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="145"/>
+        <TextBox x:Name="tbStadt" HorizontalAlignment="Left" Margin="347,80,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="145"/>
         <Label Content="Strasse" HorizontalAlignment="Left" Margin="270,99,0,0" VerticalAlignment="Top" Width="72" HorizontalContentAlignment="Right" RenderTransformOrigin="0.538,0.269"/>
-        <TextBox HorizontalAlignment="Left" Margin="347,103,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="145"/>
+        <TextBox x:Name="tbStrasse" HorizontalAlignment="Left" Margin="347,103,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="145"/>
         <Label Content="HausNr" HorizontalAlignment="Left" Margin="270,122,0,0" VerticalAlignment="Top" Width="72" HorizontalContentAlignment="Right" RenderTransformOrigin="0.538,0.269"/>
-        <TextBox HorizontalAlignment="Left" Margin="347,126,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="145"/>
+        <TextBox x:Name="tbHausNr" HorizontalAlignment="Left" Margin="347,126,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="145"/>
         <Label Content="Firma" HorizontalAlignment="Left" Margin="270,145,0,0" VerticalAlignment="Top" Width="72" HorizontalContentAlignment="Right" RenderTransformOrigin="0.538,0.269"/>
-        <TextBox HorizontalAlignment="Left" Margin="347,149,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="145"/>
-        <DatePicker HorizontalAlignment="Left" Margin="118,126,0,0" VerticalAlignment="Top" Width="144" Height="19" FontSize="8" FontWeight="Bold" FirstDayOfWeek="Monday"/>
+        <TextBox x:Name="tbFirma" HorizontalAlignment="Left" Margin="347,149,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="145"/>
+        <DatePicker x:Name="dpGeburtstag" HorizontalAlignment="Left" Margin="118,126,0,0" VerticalAlignment="Top" Width="144" Height="19" FontSize="8" FontWeight="Bold" FirstDayOfWeek="Monday"/>
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="276,176,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="imgKunde" HorizontalAlignment="Left" Height="100" Margin="276,176,0,0" VerticalAlignment="Top" Width="100"/>
     </Grid>
 </Window>
