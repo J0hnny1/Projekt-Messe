@@ -24,6 +24,10 @@ namespace ProjektMesse
         {
             InitializeComponent();
 
+            ContextLokaleDB dbL = new ContextLokaleDB();
+            dbL.
+
+            // Produktgruppen Liste
             for (int i = 0; i< 10; i++)
             {
                 ListBoxItem li = new ListBoxItem();
