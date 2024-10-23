@@ -16,4 +16,12 @@
       <Content Include="obj\Debug\net8.0-windows\Screen5.baml" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DatenbankVerwaltung\DatenbankVerwaltung.csproj" />
+    </ItemGroup>
+
 </Project>

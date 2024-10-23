@@ -53,7 +53,7 @@ namespace ProjektMesse {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ProjektMesse;component/screen1.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ProjektMesse;V1.0.0.0;component/screen1.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Screen1.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

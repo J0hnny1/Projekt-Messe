@@ -1362,6 +1362,22 @@
             "rid": "win"
           }
         }
+      },
+      "DatenbankVerwaltung/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.OpenApi": "8.0.8",
+          "Microsoft.EntityFrameworkCore": "9.0.0-rc.1.24451.1",
+          "Microsoft.EntityFrameworkCore.Sqlite": "9.0.0-rc.1.24451.1",
+          "Swashbuckle.AspNetCore": "6.4.0"
+        },
+        "compile": {
+          "bin/placeholder/DatenbankVerwaltung.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DatenbankVerwaltung.dll": {}
+        }
       }
     }
   },
@@ -4008,11 +4024,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "DatenbankVerwaltung/1.0.0": {
+      "type": "project",
+      "path": "../DatenbankVerwaltung/DatenbankVerwaltung.csproj",
+      "msbuildProject": "../DatenbankVerwaltung/DatenbankVerwaltung.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "C:\\Users\\mattia.mercorillo\\Source\\Repos\\Projekt-Messe\\DatenbankVerwaltung\\DatenbankVerwaltung.csproj",
+      "DatenbankVerwaltung >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 8.0.8",
       "Microsoft.EntityFrameworkCore >= 9.0.0-rc.1.24451.1",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.0-rc.1.24451.1",
@@ -4120,16 +4141,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Das Projekt \"C:\\Users\\mattia.mercorillo\\Source\\Repos\\Projekt-Messe\\DatenbankVerwaltung\\DatenbankVerwaltung.csproj\" wurde nicht gefunden. Stellen Sie sicher, dass der Projektverweis gültig und die Projektdatei vorhanden ist.",
-      "libraryId": "C:\\Users\\mattia.mercorillo\\Source\\Repos\\Projekt-Messe\\DatenbankVerwaltung\\DatenbankVerwaltung.csproj",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  }
 }

@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WebApplication1.Models;
 
 namespace ProjektMesse
 {
@@ -25,13 +26,13 @@ namespace ProjektMesse
             InitializeComponent();
 
             ContextLokaleDB dbL = new ContextLokaleDB();
-            dbL.
+            List<Produktgruppe> produktgruppen = dbL.Produktgruppe.ToList();
 
             // Produktgruppen Liste
-            for (int i = 0; i< 10; i++)
+            for (int i = 0; i< produktgruppen.Count; i++)
             {
                 ListBoxItem li = new ListBoxItem();
-                li.Content = "Halo";
+                li.Content = produktgruppen[i].Name;
                 LBProduktgruppen.Items.Add(li);
             }
         }
