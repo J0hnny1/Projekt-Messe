@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using AForge.Video;
+using AForge.Video.DirectShow;
 
 namespace ProjektMesse
 {
@@ -37,7 +39,20 @@ namespace ProjektMesse
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
+            FilterInfoCollection fic;
+            VideoCaptureDevice vcd;
 
+            fic = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+            vcd = new VideoCaptureDevice(fic[0].MonikerString);
+
+            vcd.NewFrame += FinalFrame_NewFrame;
+            vcd.Start();
+
+        }
+
+        private void FinalFrame_NewFrame(object sender, NewFrameEventArgs eventArgs)
+        {
+            var i = eventArgs.Frame;
         }
     }
 }

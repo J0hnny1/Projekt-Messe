@@ -9,6 +9,15 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <COMReference Include="{d37e2a3e-8545-3a39-9f4f-31827c9124ab}">
+        <WrapperTool>tlbimp</WrapperTool>
+        <VersionMinor>4</VersionMinor>
+        <VersionMajor>2</VersionMajor>
+        <Guid>d37e2a3e-8545-3a39-9f4f-31827c9124ab</Guid>
+      </COMReference>
+    </ItemGroup>
+
+    <ItemGroup>
       <Content Include="obj\Debug\net8.0-windows\Screen1.baml" />
       <Content Include="obj\Debug\net8.0-windows\Screen2.baml" />
       <Content Include="obj\Debug\net8.0-windows\Screen3.baml" />
@@ -17,11 +26,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\DatenbankVerwaltung\DatenbankVerwaltung.csproj" />
+      <PackageReference Include="AForge.Video" Version="2.2.5" />
+      <PackageReference Include="AForge.Video.DirectShow" Version="2.2.5" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
     </ItemGroup>
 
 </Project>

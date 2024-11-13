@@ -26,13 +26,14 @@ namespace ProjektMesse
             InitializeComponent();
 
             ContextLokaleDB dbL = new ContextLokaleDB();
-            List<Produktgruppe> produktgruppen = dbL.Produktgruppe.ToList();
-
+            //Produktgruppe pr = new Produktgruppe();
+            var node = dbL.Produktgruppe.GetAsyncEnumerator();
             // Produktgruppen Liste
-            for (int i = 0; i< produktgruppen.Count; i++)
+
+            while (node.MoveNextAsync().Result)
             {
                 ListBoxItem li = new ListBoxItem();
-                li.Content = produktgruppen[i].Name;
+                li.Content = node.Current.Name;
                 LBProduktgruppen.Items.Add(li);
             }
         }

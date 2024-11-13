@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjektMesse"
         mc:Ignorable="d"
-        Title="Screen2" Height="310" Width="553">
-    <Grid Margin="0,0,0,-6">
+        Title="Screen2" Height="326" Width="553">
+    <Grid Height="316" VerticalAlignment="Top">
         <Button Content="Abbruch" HorizontalAlignment="Left" Margin="409,190,0,0" VerticalAlignment="Top" Click="Button_Click" Width="83"/>
         <Label Content="Neukunde Datenerfassung" HorizontalAlignment="Center" Margin="0,34,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
         <Button Content="Weiter" HorizontalAlignment="Left" Margin="409,215,0,0" VerticalAlignment="Top" Width="83" Click="Button_Click_1"/>
