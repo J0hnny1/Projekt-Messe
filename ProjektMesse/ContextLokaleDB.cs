@@ -1,10 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
-using System.Collections.Generic;
-using System.Runtime.Intrinsics.X86;
-using System.Text;
-
 using WebApplication1.Models;
+
+namespace ProjektMesse;
 
 public class ContextLokaleDB : DbContext
 {
@@ -15,7 +13,7 @@ public class ContextLokaleDB : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlite("Data Source=serverdb.db");
+        optionsBuilder.UseSqlite("Data Source=lokal.db");
         optionsBuilder.ConfigureWarnings(warnings => warnings.Ignore(RelationalEventId.NonTransactionalMigrationOperationWarning));
     }
 }

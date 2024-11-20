@@ -1,23 +1,117 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mattia.mercorillo\\Source\\Repos\\Projekt-Messe\\ProjektMesse\\ProjektMesse.csproj": {}
+    "C:\\Users\\googo\\RiderProjects\\Projekt-Messe\\ProjektMesse\\ProjektMesse.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mattia.mercorillo\\Source\\Repos\\Projekt-Messe\\ProjektMesse\\ProjektMesse.csproj": {
+    "C:\\Users\\googo\\RiderProjects\\Projekt-Messe\\DatenbankVerwaltung\\DatenbankVerwaltung.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mattia.mercorillo\\Source\\Repos\\Projekt-Messe\\ProjektMesse\\ProjektMesse.csproj",
-        "projectName": "ProjektMesse",
-        "projectPath": "C:\\Users\\mattia.mercorillo\\Source\\Repos\\Projekt-Messe\\ProjektMesse\\ProjektMesse.csproj",
-        "packagesPath": "C:\\Users\\mattia.mercorillo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mattia.mercorillo\\Source\\Repos\\Projekt-Messe\\ProjektMesse\\obj\\",
+        "projectUniqueName": "C:\\Users\\googo\\RiderProjects\\Projekt-Messe\\DatenbankVerwaltung\\DatenbankVerwaltung.csproj",
+        "projectName": "DatenbankVerwaltung",
+        "projectPath": "C:\\Users\\googo\\RiderProjects\\Projekt-Messe\\DatenbankVerwaltung\\DatenbankVerwaltung.csproj",
+        "packagesPath": "C:\\Users\\googo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\googo\\RiderProjects\\Projekt-Messe\\DatenbankVerwaltung\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\mattia.mercorillo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\googo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0-rc.1.24451.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0-rc.1.24451.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.0-rc.1.24451.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0-rc.1.24451.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\googo\\RiderProjects\\Projekt-Messe\\ProjektMesse\\ProjektMesse.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\googo\\RiderProjects\\Projekt-Messe\\ProjektMesse\\ProjektMesse.csproj",
+        "projectName": "ProjektMesse",
+        "projectPath": "C:\\Users\\googo\\RiderProjects\\Projekt-Messe\\ProjektMesse\\ProjektMesse.csproj",
+        "packagesPath": "C:\\Users\\googo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\googo\\RiderProjects\\Projekt-Messe\\ProjektMesse\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\googo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -31,13 +125,22 @@
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\googo\\RiderProjects\\Projekt-Messe\\DatenbankVerwaltung\\DatenbankVerwaltung.csproj": {
+                "projectPath": "C:\\Users\\googo\\RiderProjects\\Projekt-Messe\\DatenbankVerwaltung\\DatenbankVerwaltung.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -55,6 +158,22 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0-rc.1.24451.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.0-rc.1.24451.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0-rc.1.24451.1, )"
             }
           },
           "imports": [
@@ -76,7 +195,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

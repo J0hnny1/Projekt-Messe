@@ -96,6 +96,8 @@ app.MapPost("zuordnung",
         context.Produktgruppe.Add( new Produktgruppe { ProduktgruppenID = 28, Name = "Fotografie- und Videografie" });
         context.Produktgruppe.Add( new Produktgruppe { ProduktgruppenID = 29, Name = "Garten- und Landschaftsbedarf" });
         context.Produktgruppe.Add(new Produktgruppe { ProduktgruppenID = 30, Name = "Transport und Logistik" });
+        context.SaveChanges();
+        
         var kunde = context.Kunden.Find(request.KundenID);
         if (kunde == null)
         {

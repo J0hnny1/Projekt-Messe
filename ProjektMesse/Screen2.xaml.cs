@@ -52,7 +52,7 @@ namespace ProjektMesse
 
         private void FinalFrame_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
-            var i = eventArgs.Frame;
+            //var i = eventArgs.Frame;
         }
     }
 }
