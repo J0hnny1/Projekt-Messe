@@ -32,7 +32,7 @@ public partial class Screen1 : Window
         var tableExists =
             context.Database.ExecuteSqlRaw(
                 "SELECT name FROM sqlite_master WHERE type='table' AND name='Produktgruppe';");
-        context.Add(Produktgruppe);
+        //context.Add(Produktgruppe);
         Console.WriteLine(tableExists);
         if (tableExists == 0)
         {

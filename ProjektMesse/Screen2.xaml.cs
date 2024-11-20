@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using AForge.Video;
 using AForge.Video.DirectShow;
+using System.Drawing;
+using System.IO;
 
 namespace ProjektMesse
 {
@@ -43,16 +45,35 @@ namespace ProjektMesse
             VideoCaptureDevice vcd;
 
             fic = new FilterInfoCollection(FilterCategory.VideoInputDevice);
-            vcd = new VideoCaptureDevice(fic[0].MonikerString);
 
-            vcd.NewFrame += FinalFrame_NewFrame;
-            vcd.Start();
-
+            foreach(FilterInfo dec in fic)
+            {
+                comboBox.Items.Add(dec.Name);
+                comboBox.SelectedIndex = 0;
+                vcd = new VideoCaptureDevice(fic[comboBox.SelectedIndex].MonikerString);
+                vcd.NewFrame += FinalFrame_NewFrame;
+                vcd.Start();
+            }
         }
 
         private void FinalFrame_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
-            //var i = eventArgs.Frame;
+            imgKunde.Source = BitmapToImageSource((Bitmap)eventArgs.Frame.Clone());
+        }
+
+        private BitmapImage BitmapToImageSource(System.Drawing.Bitmap bitmap)
+        {
+            using (MemoryStream memory = new MemoryStream())
+            {
+                bitmap.Save(memory, System.Drawing.Imaging.ImageFormat.Bmp);
+                memory.Position = 0;
+                BitmapImage bitmapimage = new BitmapImage();
+                bitmapimage.BeginInit();
+                bitmapimage.StreamSource = memory;
+                bitmapimage.CacheOption = BitmapCacheOption.OnLoad;
+                bitmapimage.EndInit();
+                return bitmapimage;
+            }
         }
     }
 }
