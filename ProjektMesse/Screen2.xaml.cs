@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using AForge.Video;
 using AForge.Video.DirectShow;
+using Microsoft.Win32;
 
 namespace ProjektMesse
 {
@@ -39,20 +40,19 @@ namespace ProjektMesse
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            FilterInfoCollection fic;
-            VideoCaptureDevice vcd;
-
-            fic = new FilterInfoCollection(FilterCategory.VideoInputDevice);
-            vcd = new VideoCaptureDevice(fic[0].MonikerString);
-
-            vcd.NewFrame += FinalFrame_NewFrame;
-            vcd.Start();
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image Files (*.bmp, *.jpg)|*.bmp;*.jpg";
+            if (openFileDialog.ShowDialog() == true)
+            {
+                BitmapImage picture = new BitmapImage();
+                picture.BeginInit();
+                picture.UriSource = new Uri(openFileDialog.FileName);
+                picture.EndInit();
+                imgKunde.Source = picture;
+            }
+                
 
         }
 
-        private void FinalFrame_NewFrame(object sender, NewFrameEventArgs eventArgs)
-        {
-            //var i = eventArgs.Frame;
-        }
     }
 }

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\googo\\RiderProjects\\Projekt-Messe\\ProjektMesse\\ProjektMesse.csproj": {}
+    "C:\\Users\\mattia.mercorillo\\source\\repos\\Projekt-Messe\\ProjektMesse\\ProjektMesse.csproj": {}
   },
   "projects": {
-    "C:\\Users\\googo\\RiderProjects\\Projekt-Messe\\DatenbankVerwaltung\\DatenbankVerwaltung.csproj": {
+    "C:\\Users\\mattia.mercorillo\\source\\repos\\Projekt-Messe\\DatenbankVerwaltung\\DatenbankVerwaltung.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\googo\\RiderProjects\\Projekt-Messe\\DatenbankVerwaltung\\DatenbankVerwaltung.csproj",
+        "projectUniqueName": "C:\\Users\\mattia.mercorillo\\source\\repos\\Projekt-Messe\\DatenbankVerwaltung\\DatenbankVerwaltung.csproj",
         "projectName": "DatenbankVerwaltung",
-        "projectPath": "C:\\Users\\googo\\RiderProjects\\Projekt-Messe\\DatenbankVerwaltung\\DatenbankVerwaltung.csproj",
-        "packagesPath": "C:\\Users\\googo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\googo\\RiderProjects\\Projekt-Messe\\DatenbankVerwaltung\\obj\\",
+        "projectPath": "C:\\Users\\mattia.mercorillo\\source\\repos\\Projekt-Messe\\DatenbankVerwaltung\\DatenbankVerwaltung.csproj",
+        "packagesPath": "C:\\Users\\mattia.mercorillo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mattia.mercorillo\\source\\repos\\Projekt-Messe\\DatenbankVerwaltung\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\googo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mattia.mercorillo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -38,11 +38,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -94,24 +89,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\googo\\RiderProjects\\Projekt-Messe\\ProjektMesse\\ProjektMesse.csproj": {
+    "C:\\Users\\mattia.mercorillo\\source\\repos\\Projekt-Messe\\ProjektMesse\\ProjektMesse.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\googo\\RiderProjects\\Projekt-Messe\\ProjektMesse\\ProjektMesse.csproj",
+        "projectUniqueName": "C:\\Users\\mattia.mercorillo\\source\\repos\\Projekt-Messe\\ProjektMesse\\ProjektMesse.csproj",
         "projectName": "ProjektMesse",
-        "projectPath": "C:\\Users\\googo\\RiderProjects\\Projekt-Messe\\ProjektMesse\\ProjektMesse.csproj",
-        "packagesPath": "C:\\Users\\googo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\googo\\RiderProjects\\Projekt-Messe\\ProjektMesse\\obj\\",
+        "projectPath": "C:\\Users\\mattia.mercorillo\\source\\repos\\Projekt-Messe\\ProjektMesse\\ProjektMesse.csproj",
+        "packagesPath": "C:\\Users\\mattia.mercorillo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mattia.mercorillo\\source\\repos\\Projekt-Messe\\ProjektMesse\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\googo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mattia.mercorillo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -126,8 +121,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\googo\\RiderProjects\\Projekt-Messe\\DatenbankVerwaltung\\DatenbankVerwaltung.csproj": {
-                "projectPath": "C:\\Users\\googo\\RiderProjects\\Projekt-Messe\\DatenbankVerwaltung\\DatenbankVerwaltung.csproj"
+              "C:\\Users\\mattia.mercorillo\\source\\repos\\Projekt-Messe\\DatenbankVerwaltung\\DatenbankVerwaltung.csproj": {
+                "projectPath": "C:\\Users\\mattia.mercorillo\\source\\repos\\Projekt-Messe\\DatenbankVerwaltung\\DatenbankVerwaltung.csproj"
               }
             }
           }
@@ -136,11 +131,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -195,7 +185,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
