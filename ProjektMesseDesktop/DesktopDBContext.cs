@@ -1,12 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using WebApplication1.Models;
 
-using WebApplication1.Models;
+namespace ProjektMesseDesktop;
 
-namespace ProjektMesse;
-
-public class ContextLokaleDB : DbContext
+public class DesktopDbContext: DbContext
 {
     public DbSet<Kunde> Kunden { get; set; }
     public DbSet<Firma> Firma { get; set; }
@@ -15,7 +13,13 @@ public class ContextLokaleDB : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlite("Data Source=databse.dat");
+        optionsBuilder.UseSqlite("Data Source=desktop.dat");
         optionsBuilder.ConfigureWarnings(warnings => warnings.Ignore(RelationalEventId.NonTransactionalMigrationOperationWarning));
+        optionsBuilder.UseLazyLoadingProxies();
+
+    }
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Kunde>().ToTable("Kunden");
     }
 }

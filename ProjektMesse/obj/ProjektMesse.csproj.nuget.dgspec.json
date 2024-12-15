@@ -13,6 +13,7 @@
         "packagesPath": "C:\\Users\\googo\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\googo\\RiderProjects\\Projekt-Messe\\DatenbankVerwaltung\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
@@ -107,6 +108,7 @@
         "packagesPath": "C:\\Users\\googo\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\googo\\RiderProjects\\Projekt-Messe\\ProjektMesse\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
