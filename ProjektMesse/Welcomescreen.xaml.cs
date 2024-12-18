@@ -31,7 +31,7 @@ public partial class Welcomescreen : Window
         /*
 
         */
-
+        //initProdugtgruppen();
         Utils.changeWindowTo<Dateneingabe>(this);
     }
 

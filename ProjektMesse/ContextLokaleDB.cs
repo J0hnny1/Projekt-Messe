@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.IO;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using WebApplication1.Models;
 
@@ -16,7 +17,8 @@ public class ContextLokaleDB : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         //optionsBuilder.UseSqlite("Data Source=databse.dat");
-        optionsBuilder.UseSqlite("Data Source=localdb.db");
+        var projectRootPath = System.IO.Path.Combine(Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName,"MesseLokal.db");
+        optionsBuilder.UseSqlite($"Data Source={projectRootPath}");
         optionsBuilder.ConfigureWarnings(warnings => warnings.Ignore(RelationalEventId.NonTransactionalMigrationOperationWarning));
     }
 }
