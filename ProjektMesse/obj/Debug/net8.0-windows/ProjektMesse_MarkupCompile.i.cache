@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\mattia.mercorillo\source\repos\Projekt-Messe\ProjektMesse\obj\Debug\net8.0-windows\
+C:\Users\mattia.mercorillo\Source\Repos\Projekt-Messe\ProjektMesse\obj\Debug\net8.0-windows\
 ProjektMesse
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\mattia.mercorillo\source\repos\Projekt-Messe\ProjektMesse\App.xaml
-5-1460727544
+C:\Users\mattia.mercorillo\Source\Repos\Projekt-Messe\ProjektMesse\App.xaml
+5-736794959
 5-1812516429
-12-967358876
-352-1436054437
-Screen1.xaml;Screen2.xaml;Screen3.xaml;Screen4.xaml;Screen5.xaml;
+171147243081
+354-1141467939
+Dateneingabe.xaml;Login.xaml;Produktgruppenwahl.xaml;Verwaltung.xaml;Welcomescreen.xaml;
 
-True
+False
 

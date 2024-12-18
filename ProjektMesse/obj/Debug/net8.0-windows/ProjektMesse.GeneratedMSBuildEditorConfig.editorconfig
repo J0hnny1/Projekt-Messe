@@ -16,6 +16,6 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProjektMesse
-build_property.ProjectDir = C:\Users\mattia.mercorillo\source\repos\Projekt-Messe\ProjektMesse\
+build_property.ProjectDir = C:\Users\mattia.mercorillo\Source\Repos\Projekt-Messe\ProjektMesse\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

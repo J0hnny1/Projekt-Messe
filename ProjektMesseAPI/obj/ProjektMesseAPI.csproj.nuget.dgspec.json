@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mattia.mercorillo\\source\\repos\\Projekt-Messe\\ProjektMesseAPI\\ProjektMesseAPI.csproj": {}
+    "C:\\Users\\mattia.mercorillo\\Source\\Repos\\Projekt-Messe\\ProjektMesseAPI\\ProjektMesseAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mattia.mercorillo\\source\\repos\\Projekt-Messe\\DatenbankVerwaltung\\DatenbankVerwaltung.csproj": {
+    "C:\\Users\\mattia.mercorillo\\Source\\Repos\\Projekt-Messe\\DatenbankVerwaltung\\DatenbankVerwaltung.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mattia.mercorillo\\source\\repos\\Projekt-Messe\\DatenbankVerwaltung\\DatenbankVerwaltung.csproj",
+        "projectUniqueName": "C:\\Users\\mattia.mercorillo\\Source\\Repos\\Projekt-Messe\\DatenbankVerwaltung\\DatenbankVerwaltung.csproj",
         "projectName": "DatenbankVerwaltung",
-        "projectPath": "C:\\Users\\mattia.mercorillo\\source\\repos\\Projekt-Messe\\DatenbankVerwaltung\\DatenbankVerwaltung.csproj",
+        "projectPath": "C:\\Users\\mattia.mercorillo\\Source\\Repos\\Projekt-Messe\\DatenbankVerwaltung\\DatenbankVerwaltung.csproj",
         "packagesPath": "C:\\Users\\mattia.mercorillo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mattia.mercorillo\\source\\repos\\Projekt-Messe\\DatenbankVerwaltung\\obj\\",
+        "outputPath": "C:\\Users\\mattia.mercorillo\\Source\\Repos\\Projekt-Messe\\DatenbankVerwaltung\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -93,14 +93,14 @@
         }
       }
     },
-    "C:\\Users\\mattia.mercorillo\\source\\repos\\Projekt-Messe\\ProjektMesseAPI\\ProjektMesseAPI.csproj": {
+    "C:\\Users\\mattia.mercorillo\\Source\\Repos\\Projekt-Messe\\ProjektMesseAPI\\ProjektMesseAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mattia.mercorillo\\source\\repos\\Projekt-Messe\\ProjektMesseAPI\\ProjektMesseAPI.csproj",
+        "projectUniqueName": "C:\\Users\\mattia.mercorillo\\Source\\Repos\\Projekt-Messe\\ProjektMesseAPI\\ProjektMesseAPI.csproj",
         "projectName": "ProjektMesseAPI",
-        "projectPath": "C:\\Users\\mattia.mercorillo\\source\\repos\\Projekt-Messe\\ProjektMesseAPI\\ProjektMesseAPI.csproj",
+        "projectPath": "C:\\Users\\mattia.mercorillo\\Source\\Repos\\Projekt-Messe\\ProjektMesseAPI\\ProjektMesseAPI.csproj",
         "packagesPath": "C:\\Users\\mattia.mercorillo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mattia.mercorillo\\source\\repos\\Projekt-Messe\\ProjektMesseAPI\\obj\\",
+        "outputPath": "C:\\Users\\mattia.mercorillo\\Source\\Repos\\Projekt-Messe\\ProjektMesseAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -121,8 +121,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\mattia.mercorillo\\source\\repos\\Projekt-Messe\\DatenbankVerwaltung\\DatenbankVerwaltung.csproj": {
-                "projectPath": "C:\\Users\\mattia.mercorillo\\source\\repos\\Projekt-Messe\\DatenbankVerwaltung\\DatenbankVerwaltung.csproj"
+              "C:\\Users\\mattia.mercorillo\\Source\\Repos\\Projekt-Messe\\DatenbankVerwaltung\\DatenbankVerwaltung.csproj": {
+                "projectPath": "C:\\Users\\mattia.mercorillo\\Source\\Repos\\Projekt-Messe\\DatenbankVerwaltung\\DatenbankVerwaltung.csproj"
               }
             }
           }

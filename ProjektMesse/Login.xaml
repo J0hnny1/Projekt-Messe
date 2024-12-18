@@ -1,0 +1,20 @@
+﻿<Window x:Class="ProjektMesse.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjektMesse"
+        mc:Ignorable="d"
+        Title="Screen4" Height="228" Width="319">
+    <Grid Margin="0,0,0,-6">
+        <Label Content="Benutzername" HorizontalAlignment="Left" Margin="45,73,0,0" VerticalAlignment="Top" Width="84" HorizontalContentAlignment="Right" RenderTransformOrigin="0.538,0.269"/>
+        <TextBox x:Name="tbUsername" HorizontalAlignment="Left" Margin="134,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145"/>
+        <Label Content="Mitarbeiter Login" HorizontalAlignment="Left" Margin="70,31,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <Label Content="Passwort" HorizontalAlignment="Left" Margin="45,101,0,0" VerticalAlignment="Top" Width="84" HorizontalContentAlignment="Right" RenderTransformOrigin="0.538,0.269"/>
+        <PasswordBox x:Name="pbPassword" HorizontalAlignment="Left" Margin="134,105,0,0" VerticalAlignment="Top" Width="145"/>
+        <Button Content="Login" HorizontalAlignment="Left" Margin="162,154,0,0" VerticalAlignment="Top" Width="117" Click="Button_Click"/>
+        <Button Content="Abbruch" HorizontalAlignment="Left" Margin="45,154,0,0" VerticalAlignment="Top" Width="112" Click="Button_Click_1"/>
+        <Label x:Name="lbErrormsg" Content="&lt;Fehlermeldung&gt;" HorizontalAlignment="Left" Margin="45,123,0,0" VerticalAlignment="Top" Foreground="#FFE83535" Width="234"/>
+
+    </Grid>
+</Window>

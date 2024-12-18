@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oBG0F9piAQ4k4sGd5T2XSTFWj44zNi/bb7xHBlCs4n47hIvNo1PfJchN9O5zYwCgo97wS78IPPH0VqPE4v8jKg==",
+  "dgSpecHash": "EqXJXMW8TaV22aS8p1li7PLX+vbV6o1BV0pk3W7rPR7f2faREy8tpZ3lgXJdHuYi07lCSZ+Z86/xQmeXuHcKVQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mattia.mercorillo\\source\\repos\\Projekt-Messe\\ProjektMesse\\ProjektMesse.csproj",
+  "projectFilePath": "C:\\Users\\mattia.mercorillo\\Source\\Repos\\Projekt-Messe\\ProjektMesse\\ProjektMesse.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mattia.mercorillo\\.nuget\\packages\\aforge\\2.2.5\\aforge.2.2.5.nupkg.sha512",
     "C:\\Users\\mattia.mercorillo\\.nuget\\packages\\aforge.video\\2.2.5\\aforge.video.2.2.5.nupkg.sha512",
@@ -40,7 +40,7 @@
     "C:\\Users\\mattia.mercorillo\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.0\\microsoft.extensions.primitives.9.0.0.nupkg.sha512",
     "C:\\Users\\mattia.mercorillo\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\mattia.mercorillo\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
-    "C:\\Users\\mattia.mercorillo\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\mattia.mercorillo\\.nuget\\packages\\microsoft.win32.systemevents\\9.0.0\\microsoft.win32.systemevents.9.0.0.nupkg.sha512",
     "C:\\Users\\mattia.mercorillo\\.nuget\\packages\\mono.texttemplating\\3.0.0-preview-0052-g5d0f76c785\\mono.texttemplating.3.0.0-preview-0052-g5d0f76c785.nupkg.sha512",
     "C:\\Users\\mattia.mercorillo\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.8\\sqlitepclraw.bundle_e_sqlite3.2.1.8.nupkg.sha512",
     "C:\\Users\\mattia.mercorillo\\.nuget\\packages\\sqlitepclraw.core\\2.1.8\\sqlitepclraw.core.2.1.8.nupkg.sha512",
@@ -59,7 +59,7 @@
     "C:\\Users\\mattia.mercorillo\\.nuget\\packages\\system.composition.runtime\\7.0.0\\system.composition.runtime.7.0.0.nupkg.sha512",
     "C:\\Users\\mattia.mercorillo\\.nuget\\packages\\system.composition.typedparts\\7.0.0\\system.composition.typedparts.7.0.0.nupkg.sha512",
     "C:\\Users\\mattia.mercorillo\\.nuget\\packages\\system.diagnostics.diagnosticsource\\9.0.0\\system.diagnostics.diagnosticsource.9.0.0.nupkg.sha512",
-    "C:\\Users\\mattia.mercorillo\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
+    "C:\\Users\\mattia.mercorillo\\.nuget\\packages\\system.drawing.common\\9.0.0\\system.drawing.common.9.0.0.nupkg.sha512",
     "C:\\Users\\mattia.mercorillo\\.nuget\\packages\\system.io.pipelines\\9.0.0-rc.1.24431.7\\system.io.pipelines.9.0.0-rc.1.24431.7.nupkg.sha512",
     "C:\\Users\\mattia.mercorillo\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\mattia.mercorillo\\.nuget\\packages\\system.reflection.metadata\\7.0.0\\system.reflection.metadata.7.0.0.nupkg.sha512",
