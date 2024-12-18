@@ -15,7 +15,8 @@ public class ContextLokaleDB : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlite("Data Source=databse.dat");
+        //optionsBuilder.UseSqlite("Data Source=databse.dat");
+        optionsBuilder.UseSqlite("Data Source=localdb.db");
         optionsBuilder.ConfigureWarnings(warnings => warnings.Ignore(RelationalEventId.NonTransactionalMigrationOperationWarning));
     }
 }

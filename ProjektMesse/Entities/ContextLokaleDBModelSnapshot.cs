@@ -28,15 +28,12 @@ namespace ProjektMesse.Entities
                         .HasColumnType("TEXT");
 
                     b.Property<string>("PLZ")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Stadt")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Straße")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("FirmaID");

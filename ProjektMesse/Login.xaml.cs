@@ -17,22 +17,22 @@ namespace ProjektMesse
     /// <summary>
     /// Interaktionslogik für Screen4.xaml
     /// </summary>
-    public partial class Screen4 : Window
+    public partial class Login : Window
     {
         // Mitarbeiter Login
-        public Screen4()
+        public Login()
         {
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Utils.changeWindowTo<Screen5>(this);
+            Utils.changeWindowTo<Verwaltung>(this);
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Utils.changeWindowTo<Screen1>(this);
+            Utils.changeWindowTo<Welcomescreen>(this);
         }
     }
 }
