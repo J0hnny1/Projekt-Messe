@@ -4,3 +4,7 @@
 *.exe
 *.dll
 .vs/
+/ProjektMesse/obj/
+*.cache
+*Entities/
+.idea/
