@@ -70,6 +70,8 @@ namespace ProjektMesse
 
             Utils.context.SaveChanges();
             Utils.changeWindowTo<Welcomescreen>(this);
+
+            MessageBox.Show("Glückwunsch!!\nDer Gutscheincode lautet:\nog34-fje9-02lm-82md");
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -77,8 +79,11 @@ namespace ProjektMesse
             Utils.changeWindowTo<Dateneingabe>(this);
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void Button_Click_Abbrechen(object sender, RoutedEventArgs e)
         {
+            Utils.aktuellerKunde = null;
+            Utils.produktgruppenNamen = null;
+            Utils.changeWindowTo<Welcomescreen>(this);
         }
     }
 }
