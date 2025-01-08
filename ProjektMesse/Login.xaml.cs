@@ -26,8 +26,8 @@ namespace ProjektMesse
         {
             InitializeComponent();
 
-            usernameLogin = "Root123";
-            passwordLogin = "1234###";
+            usernameLogin = "admin";
+            passwordLogin = "admin";
 
             lbErrormsg.Content = "";
         }

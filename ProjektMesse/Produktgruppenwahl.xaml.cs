@@ -59,8 +59,9 @@ namespace ProjektMesse
                 {
                     MatchKundeProduktgruppe match = new MatchKundeProduktgruppe
                     {
-                        Kunde = Utils.aktuellerKunde,
-                        Produktgruppe = produktgruppe
+                        // TODO kundeId ist 0
+                        KundeId = Utils.aktuellerKunde.Id,
+                        ProduktgruppeId = produktgruppe.ProduktgruppenID
                     };
 
                     Utils.context.MatchKundeProduktgruppe.Add(match);

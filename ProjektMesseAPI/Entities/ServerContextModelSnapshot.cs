@@ -28,15 +28,12 @@ namespace ProjektMesseAPI.Entities
                         .HasColumnType("TEXT");
 
                     b.Property<string>("PLZ")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Stadt")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Straße")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("FirmaID");
@@ -93,14 +90,10 @@ namespace ProjektMesseAPI.Entities
                     b.Property<int>("KundeId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("ProduktgruppenID")
+                    b.Property<int>("ProduktgruppeId")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("KundeId");
-
-                    b.HasIndex("ProduktgruppenID");
 
                     b.ToTable("MatchKundeProduktgruppe");
                 });
@@ -127,25 +120,6 @@ namespace ProjektMesseAPI.Entities
                         .HasForeignKey("FirmaID");
 
                     b.Navigation("Firma");
-                });
-
-            modelBuilder.Entity("WebApplication1.Models.MatchKundeProduktgruppe", b =>
-                {
-                    b.HasOne("WebApplication1.Models.Kunde", "Kunde")
-                        .WithMany()
-                        .HasForeignKey("KundeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("WebApplication1.Models.Produktgruppe", "Produktgruppe")
-                        .WithMany()
-                        .HasForeignKey("ProduktgruppenID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Kunde");
-
-                    b.Navigation("Produktgruppe");
                 });
 #pragma warning restore 612, 618
         }
