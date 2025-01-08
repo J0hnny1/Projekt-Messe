@@ -18,6 +18,7 @@ using AForge.Video.DirectShow;
 using WebApplication1.Models;
 using System.IO;
 using Path = System.IO.Path;
+using Microsoft.Data.Sqlite;
 
 //using Firma = ProjektMesse.Models.Firma;
 
@@ -66,6 +67,29 @@ namespace ProjektMesse
             }
 
 
+            byte[] imageBytes;
+            
+            // Lade das Bild aus dem Bilderordner
+            string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyPictures), "capturedImage.jpg");
+            if (File.Exists(filePath))
+            {
+                Bitmap bitmap = new Bitmap(filePath);
+
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    bitmap.Save(ms, ImageFormat.Jpeg);
+                    imageBytes = ms.ToArray();
+                }
+
+                // Das Bitmap-Objekt muss freigegeben werden
+                bitmap.Dispose();
+            }
+            else
+            {
+                MessageBox.Show("Bild konnte nicht gefunden werden.");
+                return;
+            }
+
             Utils.aktuellerKunde = new Kunde
             {
                 Name = tbName.Text,
@@ -74,8 +98,10 @@ namespace ProjektMesse
                 PLZ = tbPLZ.Text,
                 Stadt = tbStadt.Text,
                 Firma = firma,
-                Firmenberater = tbFirma.Text != ""
+                Firmenberater = tbFirma.Text != "",
+                Bild = imageBytes
             };
+
             Utils.changeWindowTo<Produktgruppenwahl>(this);
         }
 
@@ -110,20 +136,25 @@ namespace ProjektMesse
                 "capturedImage.jpg");
             bitmap.Save(filePath, ImageFormat.Jpeg);
             Console.WriteLine("Image saved to: " + filePath);
-            // Convert Bitmap to BitmapImage
-            BitmapImage bitmapImage = new BitmapImage();
-            using (MemoryStream memory = new MemoryStream())
-            {
-                bitmap.Save(memory, ImageFormat.Bmp);
-                memory.Position = 0;
-                bitmapImage.BeginInit();
-                bitmapImage.StreamSource = memory;
-                bitmapImage.CacheOption = BitmapCacheOption.OnLoad;
-                bitmapImage.EndInit();
-            }
 
-            // Set the Source property of imgKunde
-            imgKunde.Source = bitmapImage;
+            // Convert Bitmap to BitmapImage
+            imgKunde.Dispatcher.Invoke(() =>
+            {
+                BitmapImage bitmapImage = new BitmapImage();
+                using (MemoryStream memory = new MemoryStream())
+                {
+                    bitmap.Save(memory, ImageFormat.Bmp);
+                    memory.Position = 0;
+                    bitmapImage.BeginInit();
+                    bitmapImage.StreamSource = memory;
+                    bitmapImage.CacheOption = BitmapCacheOption.OnLoad;
+                    bitmapImage.EndInit();
+                }
+
+                // Set the Source property of imgKunde
+                imgKunde.Source = bitmapImage;
+            });
+
             bitmap.Dispose();
         }
 
@@ -137,5 +168,28 @@ namespace ProjektMesse
 
             base.OnClosed(e);
         }
+
+        private void SaveImageToDatabase(Bitmap bitmap)
+        {
+            byte[] imageBytes;
+            using (MemoryStream ms = new MemoryStream())
+            {
+                bitmap.Save(ms, ImageFormat.Jpeg);
+                imageBytes = ms.ToArray();
+            }
+
+            string connectionString = "Data Source=your_database.db;Version=3;";
+            using (SqliteConnection connection = new SqliteConnection(connectionString))
+            {
+                connection.Open();
+                string query = "INSERT INTO Images (ImageData) VALUES (@ImageData)";
+                using (SqliteCommand command = new SqliteCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@ImageData", imageBytes);
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
     }
 }
