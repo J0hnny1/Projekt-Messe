@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="Screen2" Height="326" Width="553">
     <Grid Height="316" VerticalAlignment="Top">
-        <Button Content="Abbruch" HorizontalAlignment="Left" Margin="409,190,0,0" VerticalAlignment="Top" Click="BtnAbbruch" Width="83"/>
+        <Button Content="Abbruch" HorizontalAlignment="Left" Margin="347,210,0,0" VerticalAlignment="Top" Click="BtnAbbruch" Width="120"/>
         <Label Content="Neukunde Datenerfassung" HorizontalAlignment="Center" Margin="0,34,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
-        <Button Content="Weiter" HorizontalAlignment="Left" Margin="409,215,0,0" VerticalAlignment="Top" Width="83" Click="BtnWeiter"/>
-        <Button Content="Bild aufnehmen" HorizontalAlignment="Left" Margin="142,180,0,0" VerticalAlignment="Top" Width="120" Click="BtnBildaufnehmen"/>
+        <Button Content="Weiter" HorizontalAlignment="Left" Margin="347,235,0,0" VerticalAlignment="Top" Width="120" Click="BtnWeiter"/>
+        <Button Content="Bild aufnehmen" HorizontalAlignment="Left" Margin="347,185,0,0" VerticalAlignment="Top" Width="120" Click="BtnBildaufnehmen"/>
         <Label Content="Name" HorizontalAlignment="Left" Margin="40,76,0,0" VerticalAlignment="Top" Width="72" HorizontalContentAlignment="Right" RenderTransformOrigin="0.538,0.269"/>
         <TextBox x:Name="tbName" HorizontalAlignment="Left" Margin="117,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="145"/>
         <Label Content="Vorname" HorizontalAlignment="Left" Margin="40,99,0,0" VerticalAlignment="Top" Width="72" HorizontalContentAlignment="Right" RenderTransformOrigin="0.538,0.269"/>
@@ -27,7 +27,7 @@
         <Label Content="Firma" HorizontalAlignment="Left" Margin="270,145,0,0" VerticalAlignment="Top" Width="72" HorizontalContentAlignment="Right" RenderTransformOrigin="0.538,0.269"/>
         <TextBox x:Name="tbFirma" HorizontalAlignment="Left" Margin="347,149,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="145"/>
         <DatePicker x:Name="dpGeburtstag" HorizontalAlignment="Left" Margin="118,126,0,0" VerticalAlignment="Top" Width="144" Height="19" FontSize="8" FontWeight="Bold" FirstDayOfWeek="Monday"/>
-        <Rectangle HorizontalAlignment="Left" Height="100" Margin="276,176,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="imgKunde" HorizontalAlignment="Left" Height="100" Margin="276,176,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="imgKunde" HorizontalAlignment="Left" Height="90" Margin="118,185,0,0" VerticalAlignment="Top" Width="155"/>
+        <Label Content="Bild" HorizontalAlignment="Left" Margin="82,176,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
